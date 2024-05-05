@@ -5,14 +5,18 @@ import Layout from "../../../../layouts/Layout.astro";
 import { t, changeLanguage } from "i18next";
 import { localizePath } from "astro-i18next";
 import SocialList from "../../../../components/SocialList.astro";
+import Clipboard from "../../../../components/Clipboard.astro";
+import { MODULE_LINK_DFT } from "../../../../config";
 
 changeLanguage("en");
 ---
 
 <Layout title={t("site.title")}>
   <main class="container mx-auto px-4">
-    <h1 class="font-bold text-2xl my-4">{t("site.title")}</h1>
-
+    <div class="w-11/12 mx-auto my-3 ">
+      <Clipboard link={MODULE_LINK_DFT} />
+    </div>
+    <h1 class="font-bold text-2xl my-4">{t("pages.index_modules_dft")}</h1>
     <ListCard title={t("pages.index_components")}>
       <Card
         title={t("pages.journal")}
@@ -23,10 +27,14 @@ changeLanguage("en");
       <Card title="???" description="???" route="#" />
     </ListCard>
 
-    <ListCard title={t("pages.github_title")}>
+    <ListCard title={t("pages.github")}>
       <Card
-        title={t("pages.github")}
-        description={t("pages.github_desc")}
+        title={t("pages.github_releases")}
+        description={t("pages.github_releases_desc")}
+        route="https://github.com/deniztadice/dft/releases"
+      />
+      <Card
+        title={t("pages.github_changelog")}
         route="https://github.com/deniztadice/dft/releases"
       />
     </ListCard>

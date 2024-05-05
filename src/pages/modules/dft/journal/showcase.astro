@@ -2,6 +2,7 @@
 import "../../../../../public/styles/fonts.css";
 import "../../../../../public/styles/modules/dft/journal.css";
 import { t, changeLanguage } from "i18next";
+import { localizePath } from "astro-i18next";
 import Announce from "../../../../components/Announce.astro";
 import Layout from "../../../../layouts/Layout.astro";
 import { MODULE_LINK_DFT } from "../../../../config";
@@ -15,7 +16,7 @@ changeLanguage("uk");
     <div class="w-11/12 mx-auto my-3 ">
       <Clipboard link={MODULE_LINK_DFT} />
     </div>
-    <h1 class="font-bold text-2xl my-4">{t("pages.index_modules_dft")} - {t("pages.journal")} - {t("pages.journal_showcase")}
+    <h1 class="font-bold text-2xl my-4"><a class="text-blue-800 hover:text-blue-600" href={localizePath("/modules/dft")}>{t("pages.index_modules_dft")}</a> - <a class="text-blue-800 hover:text-blue-600" href={localizePath("/modules/dft/journal")}>{t("pages.journal")}</a> - {t("pages.journal_showcase")}
     </h1>
     <Announce
       title={t("announces.mobile_not_supported")}
