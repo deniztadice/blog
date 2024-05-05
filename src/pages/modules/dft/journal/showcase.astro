@@ -4,14 +4,18 @@ import "../../../../../public/styles/modules/dft/journal.css";
 import { t, changeLanguage } from "i18next";
 import Announce from "../../../../components/Announce.astro";
 import Layout from "../../../../layouts/Layout.astro";
+import { MODULE_LINK_DFT } from "../../../../config";
+import Clipboard from "../../../../components/Clipboard.astro";
 
 changeLanguage("uk");
 ---
 
 <Layout title=`${t("pages.journal")} - ${t("pages.journal_showcase")}`>
   <main class="container mx-auto px-4">
-    <h1 class="font-bold text-2xl my-4">
-      {t("site.title")} - {t("pages.journal")} - {t("pages.journal_showcase")}
+    <div class="w-11/12 mx-auto my-3 ">
+      <Clipboard link={MODULE_LINK_DFT} />
+    </div>
+    <h1 class="font-bold text-2xl my-4">{t("pages.index_modules_dft")} - {t("pages.journal")} - {t("pages.journal_showcase")}
     </h1>
     <Announce
       title={t("announces.mobile_not_supported")}

@@ -1,5 +1,8 @@
 ---
-import { MODULE_LINK } from "../config";
+const {link} = Astro.props
+interface Props {
+  link:string;
+}
 ---
 
 <div class="w-full max-w-[40rem] mx-auto">
@@ -9,7 +12,7 @@ import { MODULE_LINK } from "../config";
       id="module-link"
       type="text"
       class="col-span-6 bg-blue-200 border border-blue-200 text-black text-xs md:text-sm font-bold rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 truncate"
-      value={MODULE_LINK}
+      value={link}
       disabled
       readonly
     />

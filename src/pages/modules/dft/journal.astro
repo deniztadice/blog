@@ -5,15 +5,18 @@ import Layout from "../../../layouts/Layout.astro";
 import { t, changeLanguage } from "i18next";
 import { localizePath } from "astro-i18next";
 import SocialList from "../../../components/SocialList.astro";
+import { MODULE_LINK_DFT } from "../../../config";
+import Clipboard from "../../../components/Clipboard.astro";
 
 changeLanguage("uk");
 ---
 
 <Layout title={t("pages.journal")}>
   <main class="container mx-auto px-4">
-    <h1 class="font-bold text-2xl my-4">
-      {t("site.title")} - {t("pages.journal")}
-    </h1>
+    <div class="w-11/12 mx-auto my-3 ">
+      <Clipboard link={MODULE_LINK_DFT} />
+    </div>
+    <h1 class="font-bold text-2xl my-4">{t("pages.index_modules_dft")} - {t("pages.journal")}</h1>
 
     <ListCard title={t("pages.index_menu")}>
       <Card

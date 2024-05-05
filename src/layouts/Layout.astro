@@ -15,16 +15,16 @@ const { title } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="description" content={t("site.title")} />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" href="/favicon.webp" />
+    <link rel="icon" href="/blog/favicon.ico" />
     <title>{title}</title>
   </head>
 
   <body class="bg-blue-300">
     <Navbar />
     <slot />
-    <footer class="container mx-auto flex flex-col items-center">
+    <!-- <footer class="container mx-auto flex flex-col items-center">
       <a href="https://github.com/deniztadice/dft"><img class="w-14" src="/blog/images/github-mark/github-mark.svg" alt="Github"></a>
-    </footer>
+    </footer> -->
     
   </body>
 </html>
