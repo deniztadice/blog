@@ -1,11 +1,16 @@
 {
   "site": {
-    "title": "Інструменти Деніза для Foundry",
+    "title": "DTD",
     "description": "Модуль для Foundry VTT"
   },
   "pages": {
     "index":"Головна",
     "index_menu":"Меню",
+    "index_modules": "Модулі",
+    "index_modules_dft": "Інструменти Деніза для Foundry",
+    "index_modules_dft_short": "DFT",
+    "index_modules_dft_desc": "Цей модуль додає стилізовані текстові блоки для вашого журналу",
+    "index_adventures": "Пригоди",
     "index_components":"Компоненти модуля",
     "index_social_links":"Соціальні посилання",
     "github_title":"Github",
@@ -27,5 +32,11 @@
     "telegram":"Telegram",
     "youtube":"YouTube",
     "steam":"Steam"
+  },
+  "systems": {
+    "pf2e":"Pathfinder 2e",
+    "pf2e_short":"PF2e",
+    "dnd5":"Dungeons & Dragons 5e",
+    "dnd5_short":"DND5e"
   }
 }

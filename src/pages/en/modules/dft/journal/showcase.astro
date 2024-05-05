@@ -1,11 +1,11 @@
 ---
-import "../../../../styles/journal.css";
-import "../../../../styles/fonts.css";
-import Announce from "../../components/Announce.astro";
-import Layout from "../../layouts/Layout.astro";
+import "../../../../../../public/styles/fonts.css";
+import "../../../../../../public/styles/modules/dft/journal.css";
 import { t, changeLanguage } from "i18next";
+import Announce from "../../../../../components/Announce.astro";
+import Layout from "../../../../../layouts/Layout.astro";
 
-changeLanguage("uk");
+changeLanguage("en");
 ---
 
 <Layout title=`${t("pages.journal")} - ${t("pages.journal_showcase")}`>

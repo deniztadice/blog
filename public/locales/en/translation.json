@@ -1,11 +1,16 @@
 {
   "site": {
-    "title": "Deniz's Foundry Tools",
+    "title": "DTD",
     "description": "Module for Foundry VTT"
   },
   "pages": {
     "index":"Main",
     "index_menu":"Menu",
+    "index_modules": "Modules",
+    "index_modules_dft": "Deniz's Foundry Tools",
+    "index_modules_dft_short": "DFT",
+    "index_modules_dft_desc": "This module adds stylish text blocks for your journal",
+    "index_adventures": "Adventures",
     "index_components":"Components of module",
     "index_social_links":"Social links",
     "github_title":"Github",
@@ -27,5 +32,11 @@
     "telegram":"Telegram 🇺🇦",
     "youtube":"YouTube 🇺🇦",
     "steam":"Steam"
+  },
+  "systems": {
+    "pf2e":"Pathfinder 2e",
+    "pf2e_short":"PF2e",
+    "dnd5":"Dungeons & Dragons 5e",
+    "dnd5_short":"DND5e"
   }
 }

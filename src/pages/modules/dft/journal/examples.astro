@@ -1,14 +1,13 @@
 ---
-import "../../../../../styles/journal.css";
-import "../../../../../styles/fonts.css";
-import Announce from "../../../components/Announce.astro";
-import Example from "../../../components/journal/Example.astro";
-import Layout from "../../../layouts/Layout.astro";
+import "../../../../../public/styles/modules/dft/journal.css";
+import "../../../../../public/styles/fonts.css";
 import { t, changeLanguage } from "i18next";
+import Announce from "../../../../components/Announce.astro";
+import Example from "../../../../components/journal/Example.astro";
+import Layout from "../../../../layouts/Layout.astro";
 
-changeLanguage("en");
+changeLanguage("uk");
 ---
-
 <Layout title=`${t("pages.journal")} - ${t("pages.journal_examples")}`>
   <main class="container mx-auto px-4">
     <h1 class="font-bold text-2xl my-4">
@@ -25,8 +24,8 @@ changeLanguage("en");
         code=`
 <aside class="dft right">
     <header>
-        <span class="title">ASIDE RIGHT</span>
-        <span class="type">Description</span>
+        <p><span class="title">ASIDE RIGHT</span></p>
+        <p><span class="type">Description</span></p>
     </header>
     <p>TEXT</p>
 </aside>
@@ -38,8 +37,8 @@ changeLanguage("en");
         code=`
 <aside class="dft left">
     <header>
-        <span class="title">ASIDE LEFT</span>
-        <span class="type">Description</span>
+        <p><span class="title">ASIDE LEFT</span></p>
+        <p><span class="type">Description</span></p>
     </header>
     <p>TEXT</p>
 </aside>
@@ -64,8 +63,8 @@ changeLanguage("en");
         code=`
 <section class="dft encounter">
     <header class="encounter-img">
-        <span class="title">ENCOUNTER</span>
-        <span class="type">TYPE</span>
+        <p><span class="title">ENCOUNTER</span></p>
+        <p><span class="type">TYPE</span></p>
     </header>
     <p>TEXT</p>
 </section>
@@ -78,8 +77,8 @@ changeLanguage("en");
         code=`
 <section class="dft treasure">
     <header class="treasure-img">
-        <span class="title">TREASURE</span>
-        <span class="type">TYPE</span>
+        <p><span class="title">TREASURE</span></p>
+        <p><span class="type">TYPE</span></p>
     </header>
     <p>TEXT</p>
 </section>
@@ -92,8 +91,8 @@ changeLanguage("en");
         code=`
 <section class="dft item">
     <header class="item-img">
-        <span class="title">ITEM</span>
-        <span class="type">Type</span>
+        <p><span class="title">ITEM</span></p>
+        <p><span class="type">Type</span></p>
     </header>
     <p>TEXT</p>
 </section>
@@ -106,8 +105,8 @@ changeLanguage("en");
         code=`
 <section class="dft fvtt">
     <header class="fvtt-img">
-        <span class="title">FVTT</span>
-        <span class="type">Type</span>
+        <p><span class="title">FVTT</span></p>
+        <p><span class="type">Type</span></p>
     </header>
     <p>TEXT</p>
 </section>
@@ -120,8 +119,8 @@ changeLanguage("en");
         code=`
 <section class="dft reward">
     <header class="reward-img">
-        <span class="title">REWARD</span>
-        <span class="type">EXP</span>
+        <p><span class="title">REWARD</span></p>
+        <p><span class="type">EXP</span></p>
     </header>
     <p>TEXT</p>
 </section>
@@ -134,8 +133,8 @@ changeLanguage("en");
         code=`
 <section class="dft player">
     <header class="player-img">
-        <span class="title">PLAYER</span>
-        <span class="type">Type</span>
+        <p><span class="title">PLAYER</span></p>
+        <p><span class="type">Type</span></p>
     </header>
     <p>TEXT</p>
 </section>
@@ -148,8 +147,8 @@ changeLanguage("en");
         code=`
 <section class="dft pet">
     <header class="pet-img">
-        <span class="title">PET</span>
-        <span class="type">Type</span>
+        <p><span class="title">PET</span></p>
+        <p><span class="type">Type</span></p>
     </header>
     <p>TEXT</p>
 </section>
