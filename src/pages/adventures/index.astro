@@ -1,0 +1,26 @@
+---
+
+import Card from "../../components/Card.astro";
+import SocialList from "../../components/SocialList.astro";
+import Layout from "../../layouts/Layout.astro";
+import ListCard from "../../components/ListCard.astro";
+import { t, changeLanguage } from "i18next";
+import { localizePath } from "astro-i18next";
+
+changeLanguage("uk");
+---
+
+<Layout title={t("site.title")}>
+    <main class="container mx-auto px-4">
+
+          <ListCard title={t("pages.index_adventures")}>
+            <Card
+            title={t("adventures.afof_title")}
+            description={t("adventures.afof_title")}
+            route={localizePath("/adventures/afof")}
+          />
+          </ListCard>
+  
+      <SocialList />
+    </main>
+  </Layout>

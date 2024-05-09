@@ -39,5 +39,9 @@
     "pf2e_short":"PF2e",
     "dnd5":"Dungeons & Dragons 5e",
     "dnd5_short":"DND5e"
+  },
+  "adventures": {
+    "afof_title":"Жменька квітів 💐",
+    "afof_desc":"PF2e"
   }
 }

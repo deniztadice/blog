@@ -1,0 +1,136 @@
+---
+import Layout from "../../../../layouts/Layout.astro";
+import { t, changeLanguage } from "i18next";
+import { Image } from "astro:assets";
+import cover from "../../../../../src/images/adventures/afof.webp";
+import { ADVENTURE_LINK_AFOF } from "../../../../config";
+import Clipboard from "../../../../components/Clipboard.astro";
+changeLanguage("uk");
+---
+
+<Layout title={t("site.title")}>
+  <main class="container mx-auto px-4 flex flex-col">
+    <div class="w-full mx-auto my-3">
+      <Clipboard link={ADVENTURE_LINK_AFOF} />
+    </div>
+    <div class="flex flex-row">
+      <div id="body" class="flex flex-col md:w-1/2 p-4">
+        <div class="info">
+          <div class="bg-white mb-2 p-4">
+            <h5 class="text-lg font-bold mb-4">Пригода</h5>
+            <ul>
+              <li class="list-version-adventure">
+                <strong>Версія пригоди:</strong> 1.0.0
+              </li>
+              <li class="list-release"><strong>Реліз:</strong> 24.04.2024</li>
+              <li class="list-update">
+                <strong>Оновлення:</strong> 24.04.2024
+              </li>
+            </ul>
+            <h5 class="text-lg font-bold my-4">Перевірено на системах</h5>
+            <ul>
+              <li class="list-game"><strong>PF2e:</strong> 5.15.2</li>
+              <li class="list-foundry"><strong>FoundryVTT:</strong> 11.319</li>
+            </ul>
+            <h5 class="text-lg font-bold mb-4">Коментарі до пригоди:</h5>
+            <ul>
+              <li class="list-discord">
+                <a
+                  class="text-blue-800 hover:text-blue-600"
+                  href="https://discord.com/channels/1091329535913500765/1238138194394873877"
+                  >Тема у Діскорді</a>
+              </li>
+              <li class="list-telegram">
+                <a
+                  class="text-blue-800 hover:text-blue-600"
+                  href="https://t.me/deniz_ta_dice/27">Тема у Телеґрамі</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <article class="bg-amber-200 p-4">
+          <h1 class="text-2xl font-bold mb-4">{t("adventures.afof_title")}</h1>
+          <p class="mb-4">
+            <span
+              >Коли пихата аристократка вирішує, що ліщина стане гарною
+              прикрасою для її вишуканого чаювання, вона навіть не здогадується,
+              на яку біду вона наривається. Не кожна рослина в лісі хоче бути
+              виставленою на показ, і деякі з них більш ніж добре озброєні, щоб
+              боротися за тих, кого вирвали з їхніх домівок!</span
+            >
+          </p>
+          <p class="mb-4">
+            <span
+              >У <strong>"Жменьці квітів"</strong> ви візьмете на себе роль однієї
+              з чотирьох унікальних лісових рослин, які отримали розум і власну волю.
+              Коли нові паростки вихоплюють з лісу і забирають до цивілізації, саме
+              ваша група розлючених квітів і войовничих рослин повинна все виправити!</span
+            >
+          </p>
+          <p class="mb-4">
+            <span
+              ><strong>"Жменька квітів"</strong> - це коротка пригода для персонажів
+              3-го рівня, яка виводить групу лісовиків з лісу в найнебезпечніше місце
+              - на вишукане чаювання до аристократки. Крім того, чотири попередньо
+              згенеровані персонажі дають змогу швидко зануритися у пригоди в цій
+              захоплюючій пропозиції до Дня безкоштовних рольових ігор! Візьміть
+              набір костей та друзів і зіграйте роль новітніх героїв лісу!</span
+            >
+          </p>
+          <p class="mb-4">
+            <span
+              ><strong>Переклад:</strong>
+              <a
+                class="text-blue-800 hover:text-blue-600"
+                href="https://deniztadice.xyz/">Deniz Köse</a
+              >, <a
+                class="text-blue-800 hover:text-blue-600"
+                href="https://www.deepl.com/">Deepl</a
+              >, <a
+                class="text-blue-800 hover:text-blue-600"
+                href="https://translate.google.com/">Google Translate</a
+              >, <a
+                class="text-blue-800 hover:text-blue-600"
+                href="https://chat.openai.com/">ChatGPT</a
+              ></span
+            >
+          </p>
+          <p class="mb-4">
+            <span
+              ><strong>Зображення: </strong><a
+                class="text-blue-800 hover:text-blue-600"
+                href="https://marketplace.roll20.net/browse/set/18523/fistful-of-flowers-art-pack"
+                >Roll20</a
+              >, <a
+                class="text-blue-800 hover:text-blue-600"
+                href="https://www.reddit.com/user/MainFrame0/">u/MainFrame0</a
+              >, <a
+                class="text-blue-800 hover:text-blue-600"
+                href="https://www.patreon.com/snowysmaps">Snowy's Maps</a
+              >, <a
+                class="text-blue-800 hover:text-blue-600"
+                href="https://www.reddit.com/user/Eoldir/">u/Eoldir</a
+              ><br /><br /><em
+                ><strong
+                  >Підтримати безкоштовні переклади пригод можна
+                </strong></em
+              ><a
+                class="text-blue-800 hover:text-blue-600"
+                href="https://buymeacoffee.com/denizkose"
+                ><em><strong>тут</strong></em></a
+              ></span
+            >
+          </p>
+        </article>
+      </div>
+      <div id="cover" class="flex flex-col md:w-1/2 p-4">
+        <Image
+          src={cover}
+          width={cover.width}
+          height={cover.height}
+          alt={t("adventures.afof_title")}
+        />
+      </div>
+    </div>
+  </main>
+</Layout>
