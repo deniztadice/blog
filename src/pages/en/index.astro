@@ -3,10 +3,12 @@ import Card from "../../components/Card.astro";
 import ListCard from "../../components/ListCard.astro";
 import SocialList from "../../components/SocialList.astro";
 import Layout from "../../layouts/Layout.astro";
-import { t, changeLanguage } from "i18next";
+import i18next, { t, changeLanguage } from "i18next";
 import { localizePath } from "astro-i18next";
 
 changeLanguage("en");
+
+console.log(i18next.language === "en" ? undefined : "uk");
 ---
 
 <Layout title={t("site.title")}>
@@ -20,12 +22,15 @@ changeLanguage("en");
     </ListCard>
 
     
-    <!-- {
-        curLang === 'en' ? undefined :
+    {
+        i18next.language === 'en' ? undefined :
         <ListCard title={t("pages.index_adventures")}>
-
+          <Card
+            title={t("systems.pf2e")}
+            route={localizePath("/adventures/pf2e")}
+          />
         </ListCard>
-    } -->
+    }
 
     <SocialList />
   </main>
