@@ -14,9 +14,17 @@ changeLanguage("uk");
       <Clipboard link={ADVENTURE_LINK_AFOF} />
     </div>
     <div class="flex flex-row">
-      <div id="body" class="flex flex-col md:w-1/2 p-4">
-        <div class="info">
-          <div class="bg-white mb-2 p-4">
+      <div id="body" class="flex flex-col p-4">
+        <div class="info flex flex-col md:flex-row">
+          <div class="flex w-full md:w-4/12 mb-2 md:mr-2">
+            <Image
+              src={cover}
+              width={cover.width}
+              height={cover.height}
+              alt={t("adventures.afof_title")}
+            />
+          </div>
+          <div class="bg-white mb-2 p-4 w-full md:w-8/12">
             <h5 class="text-lg font-bold mb-4">Пригода</h5>
             <ul>
               <li class="list-version-adventure">
@@ -38,12 +46,14 @@ changeLanguage("uk");
                 <a
                   class="text-blue-800 hover:text-blue-600"
                   href="https://discord.com/channels/1091329535913500765/1238138194394873877"
-                  >Тема у Діскорді</a>
+                  >Тема у Діскорді</a
+                >
               </li>
               <li class="list-telegram">
                 <a
                   class="text-blue-800 hover:text-blue-600"
-                  href="https://t.me/deniz_ta_dice/27">Тема у Телеґрамі</a>
+                  href="https://t.me/deniz_ta_dice/27">Тема у Телеґрамі</a
+                >
               </li>
             </ul>
           </div>
@@ -122,14 +132,6 @@ changeLanguage("uk");
             >
           </p>
         </article>
-      </div>
-      <div id="cover" class="flex flex-col md:w-1/2 p-4">
-        <Image
-          src={cover}
-          width={cover.width}
-          height={cover.height}
-          alt={t("adventures.afof_title")}
-        />
       </div>
     </div>
   </main>
