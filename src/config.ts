@@ -6,6 +6,7 @@ export const MODULE_LINK_DFT_CHANGELOG = 'https://github.com/deniztadice/dft/blo
 
 // Advenures
 export const ADVENTURE_LINK_AFOF = 'https://github.com/deniztadice/dtd-a-fistful-of-flowers/releases/latest/download/module.json'
+export const ADVENTURE_LINK_SW = 'https://github.com/deniztadice/dtd-sundered-waves/releases/latest/download/module.json'
 
 export const NAVBAR_MENU = [
     ["pages.index", '/'],

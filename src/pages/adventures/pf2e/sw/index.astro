@@ -2,8 +2,8 @@
 import Layout from "../../../../layouts/Layout.astro";
 import { t, changeLanguage } from "i18next";
 import { Image } from "astro:assets";
-import cover from "../../../../../src/images/adventures/afof.webp";
-import { ADVENTURE_LINK_AFOF } from "../../../../config";
+import cover from "../../../../../src/images/adventures/sw.webp";
+import { ADVENTURE_LINK_SW } from "../../../../config";
 import Clipboard from "../../../../components/Clipboard.astro";
 
 changeLanguage("uk");
@@ -12,7 +12,7 @@ changeLanguage("uk");
 <Layout title={t("site.title")}>
   <main class="container mx-auto px-4 flex flex-col">
     <div class="w-full mx-auto my-3">
-      <Clipboard link={ADVENTURE_LINK_AFOF} />
+      <Clipboard link={ADVENTURE_LINK_SW} />
     </div>
     <div class="flex flex-row">
       <div id="body" class="flex flex-col p-4">
@@ -22,19 +22,19 @@ changeLanguage("uk");
               src={cover}
               width={cover.width}
               height={cover.height}
-              alt={t("adventures.afof_title")}
+              alt={t("adventures.sw_title")}
             />
           </div>
           <div class="bg-white mb-2 p-4 w-full md:w-8/12">
             <h5 class="text-lg font-bold mb-4">Пригода</h5>
             <ul>
               <li class="list-version-adventure">
-                <strong>Версія пригоди:</strong> 1.0.1
+                <strong>Версія пригоди:</strong> 1.0.0
               </li>
-              <li class="list-release"><strong>Реліз:</strong> 11.05.2024</li>
-              <li class="list-update">
-                <strong>Оновлено:</strong> 09.06.2024
-              </li>
+              <li class="list-release"><strong>Реліз:</strong> 09.06.2024</li>
+              <!-- <li class="list-update">
+                <strong>Оновлення:</strong> 24.04.2024
+              </li> -->
             </ul>
             <h5 class="text-lg font-bold my-4">Перевірено на системах</h5>
             <ul>
@@ -46,46 +46,42 @@ changeLanguage("uk");
               <li class="list-discord">
                 <a
                   class="text-blue-800 hover:text-blue-600"
-                  href="https://discord.com/channels/1091329535913500765/1238138194394873877"
+                  href="https://discord.com/channels/1091329535913500765/1249370290182553700"
                   >Тема у Діскорді</a
                 >
               </li>
               <li class="list-telegram">
                 <a
                   class="text-blue-800 hover:text-blue-600"
-                  href="https://t.me/deniz_ta_dice/27">Тема у Телеґрамі</a
+                  href="https://t.me/deniz_ta_dice/41">Тема у Телеґрамі</a
                 >
               </li>
             </ul>
           </div>
         </div>
         <article class="bg-amber-200 p-4">
-          <h1 class="text-2xl font-bold mb-4">{t("adventures.afof_title")}</h1>
+          <h1 class="text-2xl font-bold mb-4">{t("adventures.sw_title")}</h1>
           <p class="mb-4">
             <span
-              >Коли пихата аристократка вирішує, що ліщина стане гарною
-              прикрасою для її вишуканого чаювання, вона навіть не здогадується,
-              на яку біду вона наривається. Не кожна рослина в лісі хоче бути
-              виставленою на показ, і деякі з них більш ніж добре озброєні, щоб
-              боротися за тих, кого вирвали з їхніх домівок!</span
+              >Роками піратський капітан Ренлок плавав узбережжям Аркадійського
+              океану від Кайданів на півдні до вод Варісії на півночі у пошуках
+              здобичі та пригод, аж поки одного дня його удача не відвернулася
+              від нього. Корабель був захоплений флотом, а капітан і його
+              команда були заарештовані та ув'язнені. Через роки, після смерті
+              капітана у в'язниці, четверо звільнених членів екіпажу отримують
+              послання від покійного капітана, що вказує їм на скарб, який він
+              сховав для них.</span
             >
           </p>
           <p class="mb-4">
             <span
-              >У <strong>"Жменьці квітів"</strong> ви візьмете на себе роль однієї
-              з чотирьох унікальних лісових рослин, які отримали розум і власну волю.
-              Коли нові паростки вихоплюють з лісу і забирають до цивілізації, саме
-              ваша група розлючених квітів і войовничих рослин повинна все виправити!</span
-            >
-          </p>
-          <p class="mb-4">
-            <span
-              ><strong>"Жменька квітів"</strong> - це коротка пригода для персонажів
-              3-го рівня, яка виводить групу лісовиків з лісу в найнебезпечніше місце
-              - на вишукане чаювання до аристократки. Крім того, чотири попередньо
-              згенеровані персонажі дають змогу швидко зануритися у пригоди в цій
-              захоплюючій пропозиції до Дня безкоштовних рольових ігор! Візьміть
-              набір костей та друзів і зіграйте роль новітніх героїв лісу!</span
+              >Ця коротка пригода Pathfinder 2-го видання, написана Джейсоном
+              Булманом, призначена для проходження за одну сесію і включає
+              чотирьох попередньо згенерованих персонажів 5-го рівня, чиї
+              передісторії і мотивації тісно пов'язані з сюжетом пригоди. Ця
+              пригода може бути легко інтегрована в різні віртуальні настільні
+              ігри, запущена на цифрових пристроях або роздрукована і зіграна за
+              столом.</span
             >
           </p>
           <p class="mb-4">
@@ -108,24 +104,21 @@ changeLanguage("uk");
           </p>
           <p class="mb-4">
             <span
-              ><strong>Зображення: </strong><a
-                class="text-blue-800 hover:text-blue-600"
-                href="https://marketplace.roll20.net/browse/set/18523/fistful-of-flowers-art-pack"
-                >Roll20</a
-              >, <a
-                class="text-blue-800 hover:text-blue-600"
-                href="https://www.reddit.com/user/MainFrame0/">u/MainFrame0</a
-              >, <a
+              ><strong>Зображення: </strong>
+              <a
                 class="text-blue-800 hover:text-blue-600"
                 href="https://www.patreon.com/snowysmaps">Snowy's Maps</a
-              >, <a
+              >,
+              <a
                 class="text-blue-800 hover:text-blue-600"
-                href="https://www.reddit.com/user/Eoldir/">u/Eoldir</a
+                href="https://www.lifesize-models.co.uk/product.php?id=895"
+                title="The Jolly Roger">The Jolly Roger</a
               >, <a
                 class="text-blue-800 hover:text-blue-600"
                 href="https://paizo.com/"
                 title="Paizo">Paizo</a
-              ><br /><br /><em
+              >
+              <br /><br /><em
                 ><strong
                   >Підтримати безкоштовні переклади пригод можна
                 </strong></em
